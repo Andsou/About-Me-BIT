@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #38393a;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+#header-links {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    
+}
+
+header ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;  
+}
+
+.github-logo {
+    height: 30px;
+    width: auto;
+}
+
+#social-links {
+    padding: 0;  
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;   
+    gap: 50px;
+}
+
+#content img {
+    height: 600px;
+    width: auto;
+    border-style: groove;
+}
+
+figure {
+width: 450px;
+}
+
+figure figcaption {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+#description {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#description h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#description h2 {
+    font-size: 18px;
+    color: white;
+}
+
+#description p {
+    line-height: 1.875rem;
+    color: white;
+    font-size: 1.25rem
+}
+
+footer {
+    background-color: #171717;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  
+    font-size: 13px;
+    padding: 5  px; 
+}
+
+/* Skills Page */
+#skills-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#skills-content img {
+    height: auto;
+    width: 700px;
+    border-style: solid;
+    border-color: #38393a;
+}
+
+.skill-descriptions {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-descriptions h2 {
+    margin-right: auto;
+}
+
+.skill-descriptions p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+/* Contact form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#contact-form h1 {
+    justify-content: flex-start;
+    color: rgb(226, 220, 220);
+}
+
+fieldset {
+    background-color:whitesmoke;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+}
+
+input {
+    height: 25px;
+}
+
+input:focus {
+    background-color: rgb(228, 224, 224);
+    color: rgb(2, 42, 117);
+}
+
+textarea:focus {
+    background-color: rgb(228, 224, 224);
+    color: rgb(2, 42, 117);
+}
+
+#submitReset input:focus {
+    color: #000;
+    background-color: none;
+}
+
+#message {
+    resize: none;
+}
+
+.errors {
+    color: red;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    header, #header-links, .logo, .github-logo,
+    #footer-links {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    .logo, #social-links {
+        display: flex;
+        margin: 10px;
+    }
+}

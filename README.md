@@ -1,2 +1,2 @@
 # About-Me-BIT
-Last BIT Web Development 1 Project.
+About me website for BIT. Used HTML, CSS, and JavaScript for the contact me page.
